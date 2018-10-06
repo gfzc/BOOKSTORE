@@ -1,0 +1,14 @@
+
+
+<ul>
+    <% for book in @books%>
+        <li>
+        <a href="/libros/mostrar/<%= book.id %> ">
+            <%= book.title %>      
+        </a>
+        </li>
+    <% end %>
+
+</ul>
+
+ <a href="<%=libros_nuevo_path %>"> Crear libros</a>
